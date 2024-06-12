@@ -51,6 +51,8 @@ app.UseHttpsRedirection(); //all these are middlewears
 
 app.UseStaticFiles();
 
+app.UseCors("CorsPolicy");
+
 app.UseAuthorization();
 
 app.MapControllers();
